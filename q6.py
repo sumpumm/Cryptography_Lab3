@@ -6,7 +6,7 @@ def gcd(a, b):
     return a
 
 def modinv(a, p):
-    # Extended Euclidean Algorithm to find modular inverse
+   
     m0, x0, x1 = p, 0, 1
     if p == 1:
         return 0
@@ -39,8 +39,8 @@ def elgamal_decrypt(private_key, p, c1, c2):
     m = (c2 * s_inv) % p
     return m
 
-# Example usage
-p = 467  # A large prime number for simplicity, choose a large prime in practice
+
+p = 467  
 public_key, private_key = elgamal_keygen(p)
 
 print(f"Public key: {public_key}")
