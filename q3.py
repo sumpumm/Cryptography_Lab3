@@ -43,7 +43,7 @@ def find_primitive_roots(p):
     
     return primitive_roots
 
-# Example usage:
+
 p = 23
 primitive_roots = find_primitive_roots(p)
 print(f"Primitive roots of {p} are: {primitive_roots}")
