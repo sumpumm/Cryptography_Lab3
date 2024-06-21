@@ -18,26 +18,22 @@ phi = (p-1)*(q-1)
 
 while (e < phi):
 
-	# e must be co-prime to phi and
-	# smaller than phi.
 	if(gcd(e, phi) == 1):
 		break
 	else:
 		e = e+1
 
-# Private key (d stands for decrypt)
-# choosing d such that it satisfies
-# d*e = 1 + k * totient
+
 
 k = 2
 d = (1 + (k*phi))/e
 
-# Message to be encrypted
-msg = 12.0
+
+msg = 12
 
 print("Message data = ", msg)
 
-# Encryption c = (msg ^ e) % n
+
 c = pow(msg, e)
 c = math.fmod(c, n)
 print("Encrypted data = ", c)
